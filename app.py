@@ -41,7 +41,7 @@ def notice_detail(notice_id):
 def legal_detail(legal_id):
 
     case = next((case for case in legal_cases if case['legal_id'] == legal_id), None)
-    print('>>',case)
+    # print('>>',case)
     if case:
         return render_template('legal_detail.html', case=case,
                                year=datetime.now().year)
