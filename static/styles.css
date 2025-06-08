@@ -1,0 +1,100 @@
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+    }
+    .notice-card {
+        transition: all 0.3s ease;
+        height: 100%;
+    }
+    .notice-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+    .urgent { border-left: 5px solid #dc3545; }
+    .event { border-left: 5px solid #198754; }
+    .maintenance { border-left: 5px solid #ffc107; }
+    .general { border-left: 5px solid #0dcaf0; }
+    .legal { border-left: 5px solid #6f42c1; }
+    .financial { border-left: 5px solid #d63384; }
+
+    .tab-pane {
+        transition: opacity 0.3s ease-in-out;
+    }
+    .tab-pane.fade {
+        opacity: 0;
+    }
+    .tab-pane.fade.show {
+        opacity: 1;
+    }
+
+    .nav-tabs .nav-link {
+        color: #6c757d;
+    }
+    .nav-tabs .nav-link.active {
+        color: #0d6efd;
+        font-weight: 500;
+    }
+
+    .summary-card {
+        background-color: #f8f9fa;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+    }
+
+    .badge {
+        font-weight: 500;
+        padding: 0.5em 1em;
+    }
+    .legal-card {
+        transition: all 0.3s ease;
+        height: 100%;
+    }
+    .legal-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+    /* Legal matter status colors */
+    .pending { border-left: 5px solid #ffc107; }
+    .resolved { border-left: 5px solid #198754; }
+    .in-progress { border-left: 5px solid #0dcaf0; }
+    .urgent-legal { border-left: 5px solid #dc3545; }
+
+
+
+    /* Header hover effect */
+header a:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+header a {
+    transition: all 0.2s ease;
+}
+
+
+    /* Footer Styles */
+.bg-darker {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: auto;
+}
+
+footer a:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+
+/* Make the body wrapper for sticky footer */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
